@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.islaspartyrentals.com"),
+  alternates: {
+  canonical: "/",
+},
   title: "Islas Party Rentals | Party Rentals en Salinas, CA",
   description:
     "Renta de sillas, mesas, sombrillas y toldos para bodas, fiestas, reuniones y eventos en Salinas, California. Cotiza tu evento con Islas Party Rentals.",
@@ -30,6 +34,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
+    url: "https://www.islaspartyrentals.com",
     title: "Islas Party Rentals | Salinas, CA",
     description:
       "Sillas, mesas, sombrillas y toldos para bodas, fiestas, reuniones y eventos.",
