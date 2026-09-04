@@ -66,12 +66,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Islas Party Rentals",
+  url: "https://www.islaspartyrentals.com",
+  telephone: "+1-831-540-0652",
+  email: "islaspartyrentalsinc@gmail.com",
+  image: "https://www.islaspartyrentals.com/images/social-share.png",
+  description:
+    "Renta de sillas, mesas, sombrillas y toldos para fiestas, reuniones y eventos en Salinas, California.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Salinas",
+    addressRegion: "CA",
+    addressCountry: "US",
+  },
+};
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+  />
+  {children}
+</body>
     </html>
   );
 }
