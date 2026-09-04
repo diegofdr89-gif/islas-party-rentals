@@ -5,6 +5,7 @@ import {
   TentTree, 
   MessageCircle, 
 } from "lucide-react";
+import QuoteForm from "./components/QuoteForm";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -585,32 +586,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* TARJETA */}
-      <div className="rounded-3xl bg-slate-50 p-8 md:p-10">
+      {/* FORMULARIO DE COTIZACIÓN */}
+<div className="rounded-3xl bg-slate-50 p-8 md:p-10">
+  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-500">
+    Cotización
+  </p>
 
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-          Cotización
-        </p>
+  <h3 className="mb-3 text-3xl font-bold text-slate-950">
+    Solicita una cotización
+  </h3>
 
-        <h3 className="mb-4 text-3xl font-bold text-slate-950">
-          ¿Qué necesitas para tu evento?
-        </h3>
-
-        <p className="mb-8 leading-relaxed text-slate-600">
-          Escríbenos por WhatsApp y cuéntanos la fecha de tu evento,
-          ubicación y el mobiliario que necesitas.
-        </p>
-
-        <a
-          href="https://wa.me/18315400652?text=Hola%2C%20vi%20el%20sitio%20web%20de%20Islas%20Party%20Rentals%20y%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20evento."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:-translate-y-1 hover:bg-slate-800"
-        >
-          Solicitar cotización
-        </a>
-
-      </div>
+  <p className="mb-8 leading-relaxed text-slate-600">
+    Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo.
+  </p>
+<QuoteForm />
+</div>
     </div>
   </div>
 </section>
