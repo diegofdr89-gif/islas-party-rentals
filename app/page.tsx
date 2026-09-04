@@ -140,12 +140,11 @@ export default function Home() {
       </p>
 
       <h1 className="mb-6 max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-        Todo para que tu evento sea inolvidable
+        Party Rentals en Salinas, CA para eventos inolvidables
       </h1>
 
       <p className="text-lg md:text-xl text-slate-200 leading-relaxed mb-8">
-        Sillas, mesas, sombrillas y toldos para reuniones,
-        celebraciones y eventos especiales.
+        Renta de sillas, mesas, sombrillas y toldos para bodas, fiestas, reuniones y todo tipo de eventos.
       </p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -184,9 +183,8 @@ export default function Home() {
       <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
         Nuestros servicios
       </p>
-
       <h2 className="mb-5 text-4xl font-bold text-slate-950 md:text-5xl">
-        Todo lo que necesitas para tu evento
+        Renta de mobiliario para fiestas y eventos
       </h2>
 
       <p className="text-lg leading-relaxed text-slate-600">
@@ -444,10 +442,7 @@ export default function Home() {
         </h2>
 
         <p className="mb-5 text-lg leading-relaxed text-slate-300">
-          En Islas Party Rentals sabemos que cada evento es diferente.
-          Por eso ofrecemos distintas opciones de mobiliario, toldos y
-          soluciones para exteriores, buscando que cada celebración tenga
-          el espacio que necesita.
+          En Islas Party Rentals ofrecemos renta de mobiliario y equipo para eventos en Salinas, California. Contamos con sillas, mesas, sombrillas y toldos para bodas, fiestas, reuniones y celebraciones, con opciones para crear el espacio que cada evento necesita.
         </p>
 
         <p className="text-lg leading-relaxed text-slate-300">
