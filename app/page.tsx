@@ -279,7 +279,7 @@ export default function Home() {
           <img
             src="/images/sillas.jpeg"
             alt="Modelos de sillas disponibles en renta"
-            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
           />
         </div>
 
@@ -421,6 +421,49 @@ export default function Home() {
       </div>
     </div>
   </div>
+  <div className="mx-auto max-w-7xl px-6">
+  <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <div className="group overflow-hidden rounded-3xl lg:row-span-2">
+    <img
+      src="/images/galeria-evento-5.jpeg"
+      alt="Evento bajo toldo con mesas y sillas"
+      className="h-full min-h-[420px] w-full object-cover transition duration-500 group-hover:scale-105 lg:min-h-[660px]"
+    />
+  </div>
+
+  <div className="group overflow-hidden rounded-3xl">
+    <img
+      src="/images/galeria-evento-6.jpeg"
+      alt="Montaje exterior con mesas, sillas y sombrillas"
+      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+    />
+  </div>
+
+  <div className="group overflow-hidden rounded-3xl">
+    <img
+      src="/images/galeria-evento-8.jpeg"
+      alt="Montaje elegante con mesas y sillas doradas"
+      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+    />
+  </div>
+
+  <div className="group overflow-hidden rounded-3xl">
+    <img
+      src="/images/galeria-evento-7.jpeg"
+      alt="Mesa elegante con sillas transparentes"
+      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+    />
+  </div>
+
+  <div className="group overflow-hidden rounded-3xl">
+    <img
+      src="/images/galeria-evento-9.jpeg"
+      alt="Mesa de madera decorada para celebración"
+      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+    />
+  </div>
+</div>
+</div>
 </section>
 {/* NOSOTROS */}
 <section id="nosotros" className="bg-slate-950 py-16 md:py-24 text-white">
