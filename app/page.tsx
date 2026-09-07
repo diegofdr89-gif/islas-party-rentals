@@ -1,9 +1,9 @@
-import { 
-  Armchair, 
-  Table2, 
-  Umbrella, 
-  TentTree, 
-  MessageCircle, 
+import {
+  Armchair,
+  Table2,
+  Umbrella,
+  TentTree,
+  Share2,
 } from "lucide-react";
 import QuoteForm from "./components/QuoteForm";
 export default function Home() {
@@ -150,13 +150,11 @@ export default function Home() {
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
   <a
-    href="https://wa.me/18315400652?text=Hola%2C%20vi%20el%20sitio%20web%20de%20Islas%20Party%20Rentals%20y%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20evento."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex w-fit items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:-translate-y-1 hover:bg-slate-800"
-  >
-    Cotizar por WhatsApp
-  </a>
+  href="#contacto"
+  className="inline-flex w-fit items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:bg-slate-800"
+>
+  Solicitar cotización
+</a>
 
   <a
     href="tel:+18315400652"
@@ -519,12 +517,10 @@ export default function Home() {
       </div>
 
       <a
-  href="https://wa.me/18315400652?text=Hola%2C%20vi%20el%20sitio%20web%20de%20Islas%20Party%20Rentals%20y%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20evento."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:-translate-y-1 hover:bg-slate-800"
+  href="#contacto"
+  className="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:bg-slate-800"
 >
-  Cotizar por WhatsApp
+  Solicitar cotización
 </a>
     </div>
   </div>
@@ -555,13 +551,11 @@ export default function Home() {
 
           <div>
             <p className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-              WhatsApp
+              Telefono
             </p>
 
             <a
-              href="https://wa.me/18315400652"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+18315400652"
               className="text-xl font-semibold text-slate-950 transition hover:text-amber-600"
             >
               +1 (831) 540-0652
@@ -638,19 +632,56 @@ export default function Home() {
     <p className="text-sm text-slate-500">
       © 2026 Islas Party Rentals
     </p>
+<div className="flex items-center gap-5 md:pr-20">
+  <a
+    href="https://www.instagram.com/islas_party_rentals_831?igsi=MXN5MWg5ZjNmcWo4Yg=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-slate-400 transition hover:text-amber-400"
+  >
+    Instagram
+  </a>
 
+  <a
+    href="https://www.facebook.com/profile.php?id=100076482309292&mibextid=wwXIfr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-slate-400 transition hover:text-amber-400"
+  >
+    Facebook
+  </a>
+</div>
   </div>
 </footer>
-{/* BOTÓN FLOTANTE WHATSAPP */}
-<a
-  href="https://wa.me/18315400652?text=Hola%2C%20vi%20el%20sitio%20web%20de%20Islas%20Party%20Rentals%20y%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20evento."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Contactar por WhatsApp"
-  className="fixed bottom-6 right-6 z-50 flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-green-600"
->
-  <MessageCircle size={30} strokeWidth={2} />
-</a>
+{/* BOTÓN FLOTANTE REDES SOCIALES */}
+<details className="group fixed bottom-20 right-4 z-50 md:bottom-6 md:right-6">
+  <div className="absolute bottom-full right-0 mb-3 flex flex-col items-end gap-2">
+    <a
+      href="https://www.instagram.com/islas_party_rentals_831?igsi=MXN5MWg5ZjNmcWo4Yg=="
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full bg-white px-5 py-3 font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=100076482309292&mibextid=wwXIfr"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full bg-white px-5 py-3 font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
+    >
+      Facebook
+    </a>
+  </div>
+
+  <summary
+    aria-label="Ver redes sociales"
+    className="flex h-14 w-14 cursor-pointer list-none items-center justify-center rounded-full bg-slate-950 text-white shadow-xl transition hover:bg-slate-800 md:h-16 md:w-16"
+  >
+    <Share2 size={28} strokeWidth={2} />
+  </summary>
+</details>
       </section>
     </main>
   );
