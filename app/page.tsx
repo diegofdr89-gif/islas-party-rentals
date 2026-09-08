@@ -495,12 +495,12 @@ export default function Home() {
         />
       </div>
 
-      <div className="grid gap-6">
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-1 lg:gap-6">
         <div className="group overflow-hidden rounded-3xl">
           <img
             src="/images/galeria-evento-2.jpeg"
             alt="Montaje interior de evento"
-            className="h-[250px] w-full object-cover transition duration-500 group-hover:scale-105"
+            className="h-[180px] w-full object-cover transition duration-500 group-hover:scale-105 lg:h-[250px]"
           />
         </div>
 
@@ -508,19 +508,19 @@ export default function Home() {
           <img
             src="/images/galeria-evento-3.jpeg"
             alt="Decoración y montaje para evento"
-            className="h-[250px] w-full object-cover transition duration-500 group-hover:scale-105"
+            className="h-[180px] w-full object-cover transition duration-500 group-hover:scale-105 lg:h-[250px]"
           />
         </div>
       </div>
     </div>
   </div>
   <div className="mx-auto max-w-7xl px-6">
-  <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <div className="mt-6 grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-3">
   <div className="group overflow-hidden rounded-3xl lg:row-span-2">
     <img
       src="/images/galeria-evento-5.jpeg"
       alt="Evento bajo toldo con mesas y sillas"
-      className="h-full min-h-[420px] w-full object-cover transition duration-500 group-hover:scale-105 lg:min-h-[660px]"
+      className="h-[180px] w-full object-cover transition duration-500 group-hover:scale-105 lg:h-full lg:min-h-[420px]"
     />
   </div>
 
@@ -528,7 +528,7 @@ export default function Home() {
     <img
       src="/images/galeria-evento-6.jpeg"
       alt="Montaje exterior con mesas, sillas y sombrillas"
-      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+      className="h-[180px] lg:h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
     />
   </div>
 
@@ -536,7 +536,7 @@ export default function Home() {
     <img
       src="/images/galeria-evento-8.jpeg"
       alt="Montaje elegante con mesas y sillas doradas"
-      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+      className="h-[180px] lg:h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
     />
   </div>
 
@@ -544,7 +544,7 @@ export default function Home() {
     <img
       src="/images/galeria-evento-7.jpeg"
       alt="Mesa elegante con sillas transparentes"
-      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+      className="h-[180px] lg:h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
     />
   </div>
 
@@ -552,9 +552,16 @@ export default function Home() {
     <img
       src="/images/galeria-evento-9.jpeg"
       alt="Mesa de madera decorada para celebración"
-      className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
+      className="h-[180px] lg:h-[320px] w-full object-cover transition duration-500 group-hover:scale-105"
     />
   </div>
+  <div className="group overflow-hidden rounded-3xl">
+  <img
+    src="/images/galeria-evento-10.jpeg"
+    alt="Montaje elegante con mesas, sillas doradas y decoración en tonos rojo y negro"
+    className="h-[180px] w-full object-cover transition duration-500 group-hover:scale-105 lg:h-[320px]"
+  />
+</div>
 </div>
 </div>
 </section>
