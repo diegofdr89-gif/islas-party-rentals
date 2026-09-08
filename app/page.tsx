@@ -4,6 +4,8 @@ import {
   Umbrella,
   TentTree,
   Share2,
+  Sparkles,
+  Trees,
 } from "lucide-react";
 import QuoteForm from "./components/QuoteForm";
 export default function Home() {
@@ -190,70 +192,132 @@ export default function Home() {
         celebraciones y eventos especiales.
       </p>
     </div>
-
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-
-      {/* SILLAS */}
-      <div className="group rounded-3xl border border-slate-200 bg-white p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-white">
-          <Armchair size={30} strokeWidth={1.8} />
-        </div>
-
-        <h3 className="mb-3 text-2xl font-bold text-slate-950">
-          Sillas
-        </h3>
-
-        <p className="leading-relaxed text-slate-600">
-          Opciones para todo tipo de reuniones, fiestas y eventos.
-        </p>
-      </div>
-
-      {/* MESAS */}
-      <div className="group rounded-3xl border border-slate-200 bg-white p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-white">
-          <Table2 size={30} strokeWidth={1.8} />
-        </div>
-
-        <h3 className="mb-3 text-2xl font-bold text-slate-950">
-          Mesas
-        </h3>
-
-        <p className="leading-relaxed text-slate-600">
-          Mesas prácticas y versátiles para organizar cualquier celebración.
-        </p>
-      </div>
-
-      {/* SOMBRILLAS */}
-      <div className="group rounded-3xl border border-slate-200 bg-white p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-white">
-          <Umbrella size={30} strokeWidth={1.8} />
-        </div>
-
-        <h3 className="mb-3 text-2xl font-bold text-slate-950">
-          Sombrillas
-        </h3>
-
-        <p className="leading-relaxed text-slate-600">
-          Ideales para crear espacios cómodos y agradables al aire libre.
-        </p>
-      </div>
-
-      {/* TOLDOS */}
-      <div className="group rounded-3xl border border-slate-200 bg-white p-6 md:p-8 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-white">
-          <TentTree size={30} strokeWidth={1.8} />
-        </div>
-
-        <h3 className="mb-3 text-2xl font-bold text-slate-950">
-          Toldos
-        </h3>
-
-        <p className="leading-relaxed text-slate-600">
-          Cobertura y comodidad para proteger tus eventos del clima.
-        </p>
-      </div>
-
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
+  {/* SILLAS */}
+  <a
+    href="#mobiliario"
+    className="group rounded-3xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-6"
+  >
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+      <Armchair size={26} strokeWidth={1.8} />
     </div>
+
+    <h3 className="mb-2 text-xl font-bold text-slate-950">
+      Sillas
+    </h3>
+
+    <p className="leading-relaxed text-slate-600">
+  Estilos para todo tipo de eventos.
+</p>
+    <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
+      Ver modelos →
+    </span>
+  </a>
+
+  {/* MESAS */}
+  <a
+    href="#mobiliario"
+    className="group rounded-3xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-6"
+  >
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+      <Table2 size={26} strokeWidth={1.8} />
+    </div>
+
+    <h3 className="mb-2 text-xl font-bold text-slate-950">
+      Mesas
+    </h3>
+
+    <p className="leading-relaxed text-slate-600">
+  Opciones para cada celebración.
+</p>
+
+    <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
+      Ver modelos →
+
+    </span>
+  </a>
+
+  {/* SOMBRILLAS */}
+  <a
+    href="#mobiliario"
+    className="group rounded-3xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-6"
+  >
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+      <Umbrella size={26} strokeWidth={1.8} />
+    </div>
+
+    <h3 className="mb-2 text-xl font-bold text-slate-950">
+      Sombrillas
+    </h3>
+
+    <p className="leading-relaxed text-slate-600">
+  Comodidad para eventos al aire libre.
+</p>
+
+    <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
+      Ver opciones →
+    </span>
+  </a>
+
+  {/* TOLDOS */}
+  <a
+    href="#mobiliario"
+    className="group rounded-3xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-6"
+  >
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+      <TentTree size={26} strokeWidth={1.8} />
+    </div>
+
+    <h3 className="mb-2 text-xl font-bold text-slate-950">
+      Toldos
+    </h3>
+
+    <p className="leading-relaxed text-slate-600">
+  Cobertura para tus celebraciones.
+</p>
+    <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
+      Ver opciones →
+    </span>
+  </a>
+
+  {/* PISTA DE BAILE */}
+  <div className="group rounded-3xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-6">
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+      <Sparkles size={26} strokeWidth={1.8} />
+    </div>
+
+    <h3 className="mb-2 text-xl font-bold text-slate-950">
+      Pista de baile
+    </h3>
+
+    <p className="leading-relaxed text-slate-600">
+  El espacio ideal para bailar.
+</p>
+
+    <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
+      Próximamente
+    </span>
+  </div>
+
+  {/* CÉSPED */}
+  <div className="group rounded-3xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-6">
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+      <Trees size={26} strokeWidth={1.8} />
+    </div>
+
+    <h3 className="mb-2 text-xl font-bold text-slate-950">
+      Césped
+    </h3>
+
+   <p className="leading-relaxed text-slate-600">
+  Un toque elegante para tu evento.
+</p>
+
+    <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
+      Próximamente
+    </span>
+  </div>
+</div>
   </div>
 </section>
 <section id="mobiliario" className="bg-slate-50 py-16 md:py-24">
@@ -274,56 +338,85 @@ export default function Home() {
     </div>
 
     <div className="grid gap-8 md:grid-cols-2">
-      <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="aspect-[4/3] overflow-hidden bg-slate-100">
+      <div className="md:col-span-2">
+  <div className="mb-8">
+    <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
+      Mobiliario
+    </p>
+
+    <h3 className="mb-3 text-3xl font-bold text-slate-950">
+      Sillas
+    </h3>
+
+    <p className="max-w-2xl leading-relaxed text-slate-600">
+      Diferentes estilos para bodas, reuniones, fiestas, banquetes y
+      celebraciones especiales.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
+    {[
+      "/images/white-resin.png",
+      "/images/fruitwood.png",
+      "/images/black-resin.png",
+      "/images/crossback.png",
+      "/images/gold-chiavari.png",
+      "/images/clear-chiavari-black-cushion.png",
+    ].map((src) => (
+      <div
+        key={src}
+        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+      >
+        <div className="aspect-[4/5] overflow-hidden bg-white">
           <img
-            src="/images/sillas.jpeg"
-            alt="Modelos de sillas disponibles en renta"
+            src={src}
+            alt="Silla disponible en renta"
             className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
           />
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-        <div className="p-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-            Mobiliario
-          </p>
+<div className="md:col-span-2 mt-8">
+  <div className="mb-8">
+    <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
+      Mobiliario
+    </p>
 
-          <h3 className="mb-3 text-3xl font-bold text-slate-950">
-            Sillas
-          </h3>
+    <h3 className="mb-3 text-3xl font-bold text-slate-950">
+      Mesas
+    </h3>
 
-          <p className="leading-relaxed text-slate-600">
-            Diferentes estilos para bodas, reuniones, fiestas, banquetes
-            y celebraciones especiales.
-          </p>
-        </div>
-      </article>
+    <p className="max-w-2xl leading-relaxed text-slate-600">
+      Mesas para banquetes, reuniones, coctelería y eventos con diferentes
+      estilos y configuraciones.
+    </p>
+  </div>
 
-      <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="aspect-[4/3] overflow-hidden bg-slate-100">
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+    {[
+      "/images/large-round-banquet-table.png",
+      "/images/modern-cocktail-table.png",
+      "/images/rectangular-event-table.png",
+      "/images/rustic-farmhouse-table.png",
+    ].map((src) => (
+      <div
+        key={src}
+        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+      >
+        <div className="aspect-[4/3] overflow-hidden bg-white">
           <img
-            src="/images/mesas.jpeg"
-            alt="Modelos de mesas disponibles en renta"
-            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            src={src}
+            alt="Mesa disponible en renta"
+            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
           />
         </div>
-
-        <div className="p-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-            Mobiliario
-          </p>
-
-          <h3 className="mb-3 text-3xl font-bold text-slate-950">
-            Mesas
-          </h3>
-
-          <p className="leading-relaxed text-slate-600">
-            Mesas para banquetes, reuniones, coctelería y eventos con
-            diferentes estilos y configuraciones.
-          </p>
-        </div>
-      </article>
-
+      </div>
+    ))}
+  </div>
+</div>
       <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
         <div className="aspect-[4/3] overflow-hidden bg-slate-100">
           <img

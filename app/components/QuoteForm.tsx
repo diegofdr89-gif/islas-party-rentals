@@ -135,11 +135,13 @@ export default function QuoteForm() {
           className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-amber-500"
         >
           <option value="">Selecciona una opción</option>
-          <option value="chairs">Sillas</option>
-          <option value="tables">Mesas</option>
-          <option value="umbrellas">Sombrillas</option>
-          <option value="tents">Toldos</option>
-          <option value="multiple">Varios servicios</option>
+<option value="chairs">Sillas</option>
+<option value="tables">Mesas</option>
+<option value="umbrellas">Sombrillas</option>
+<option value="tents">Toldos</option>
+<option value="dance-floor">Pista de baile</option>
+<option value="grass">Césped</option>
+<option value="multiple">Varios servicios</option>
         </select>
       </div>
 

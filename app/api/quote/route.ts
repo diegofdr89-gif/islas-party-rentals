@@ -24,7 +24,17 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+const serviceLabels: Record<string, string> = {
+  chairs: "Sillas",
+  tables: "Mesas",
+  umbrellas: "Sombrillas",
+  tents: "Toldos",
+  "dance-floor": "Pista de baile",
+  grass: "Césped",
+  multiple: "Varios servicios",
+};
 
+const serviceLabel = serviceLabels[service] || service;
     const { data, error } = await resend.emails.send({
       from: "Islas Party Rentals <cotizaciones@islaspartyrentals.com>",
       to: ["islaspartyrentalsinc@gmail.com"],
@@ -38,7 +48,7 @@ export async function POST(request: Request) {
         <p><strong>Correo:</strong> ${email}</p>
         <p><strong>Fecha del evento:</strong> ${eventDate}</p>
         <p><strong>Ubicación:</strong> ${location}</p>
-        <p><strong>Servicio:</strong> ${service}</p>
+        <p><strong>Servicio:</strong> ${serviceLabel}</p>
         <p><strong>Invitados aproximados:</strong> ${guests || "No especificado"}</p>
 
         <h3>Detalles del evento</h3>
