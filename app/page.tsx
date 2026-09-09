@@ -777,22 +777,42 @@ export default function Home() {
     </p>
 <div className="flex items-center gap-5 md:pr-20">
   <a
-    href="https://www.instagram.com/islas_party_rentals_831?igsi=MXN5MWg5ZjNmcWo4Yg=="
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-semibold text-slate-400 transition hover:text-amber-400"
+  href="https://www.instagram.com/islas_party_rentals_831?igsi=MXN5MWg5ZjNmcWo4Yg=="
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram de Islas Party Rentals"
+  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-400 transition hover:border-amber-400 hover:text-amber-400"
+>
+  <svg
+    viewBox="0 0 24 24"
+    className="h-6 w-6"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    aria-hidden="true"
   >
-    Instagram
-  </a>
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+  </svg>
+</a>
 
   <a
-    href="https://www.facebook.com/profile.php?id=100076482309292&mibextid=wwXIfr"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-semibold text-slate-400 transition hover:text-amber-400"
+  href="https://www.facebook.com/profile.php?id=100076482309292&mibextid=wwXIfr"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Facebook de Islas Party Rentals"
+  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-400 transition hover:border-amber-400 hover:text-amber-400"
+>
+  <svg
+    viewBox="0 0 24 24"
+    className="h-6 w-6"
+    fill="currentColor"
+    aria-hidden="true"
   >
-    Facebook
-  </a>
+    <path d="M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v8h3.5Z" />
+  </svg>
+</a>
 </div>
   </div>
 </footer>
