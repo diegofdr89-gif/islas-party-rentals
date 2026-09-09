@@ -84,28 +84,28 @@ export default function Home() {
 
         <a
           href="#servicios"
-          className="block rounded-xl px-4 py-3 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
+          className="block rounded-xl px-4 py-2 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
         >
           Servicios
         </a>
 
         <a
           href="#galeria"
-          className="block rounded-xl px-4 py-3 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
+          className="block rounded-xl px-4 py-2 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
         >
           Galería
         </a>
 
         <a
           href="#nosotros"
-          className="block rounded-xl px-4 py-3 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
+          className="block rounded-xl px-4 py-2 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
         >
           Nosotros
         </a>
 
         <a
           href="#contacto"
-          className="block rounded-xl px-4 py-3 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
+          className="block rounded-xl px-4 py-2 font-medium text-slate-900 transition hover:bg-slate-100 hover:text-amber-600"
         >
           Contacto
         </a>
