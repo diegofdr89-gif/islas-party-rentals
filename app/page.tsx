@@ -568,7 +568,7 @@ export default function Home() {
 </div>
 </section>
 {/* NOSOTROS */}
-<section id="nosotros" className="bg-slate-950 py-16 md:py-24 text-white">
+<section id="nosotros" className="bg-slate-950 py-12 md:py-24 text-white">
   <div className="mx-auto max-w-7xl px-6">
 
     <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -584,22 +584,20 @@ export default function Home() {
           <span className="text-amber-400"> creamos espacios para celebrar</span>
         </h2>
 
-        <p className="mb-5 text-lg leading-relaxed text-slate-300">
-          En Islas Party Rentals ofrecemos renta de mobiliario y equipo para eventos en Salinas, California. Contamos con sillas, mesas, sombrillas y toldos para bodas, fiestas, reuniones y celebraciones, con opciones para crear el espacio que cada evento necesita.
-        </p>
+        <p className="mb-4 text-base leading-relaxed text-slate-300 md:mb-5 md:text-lg">
+  En Islas Party Rentals ofrecemos renta de mobiliario y equipo para eventos en Salinas, California. Contamos con sillas, mesas, sombrillas, toldos, pista de baile y césped para crear el espacio ideal para cada celebración.
+</p>
 
-        <p className="text-lg leading-relaxed text-slate-300">
-          Desde reuniones familiares hasta eventos especiales, nuestro
-          objetivo es ayudarte a encontrar las opciones adecuadas para
-          cada ocasión.
-        </p>
+        <p className="text-base leading-relaxed text-slate-300 md:text-lg">
+  Desde reuniones familiares hasta eventos especiales, te ayudamos a encontrar las opciones adecuadas para cada ocasión.
+</p>
       </div>
 
       {/* CARACTERÍSTICAS */}
       <div className="grid gap-5">
 
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-7 transition duration-300 hover:bg-white/10">
-          <div className="mb-4 text-3xl">01</div>
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-5 md:p-7 transition duration-300 hover:bg-white/10">
+          <div className="mb-3 text-2xl md:mb-4 md:text-3xl">01</div>
 
           <h3 className="mb-2 text-xl font-bold">
             Variedad de mobiliario
@@ -611,8 +609,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-7 transition duration-300 hover:bg-white/10">
-          <div className="mb-4 text-3xl">02</div>
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-5 md:p-7 transition duration-300 hover:bg-white/10">
+          <div className="mb-3 text-2xl md:mb-4 md:text-3xl">02</div>
 
           <h3 className="mb-2 text-xl font-bold">
             Soluciones para exterior
@@ -624,8 +622,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-7 transition duration-300 hover:bg-white/10">
-          <div className="mb-4 text-3xl">03</div>
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-5 md:p-7 transition duration-300 hover:bg-white/10">
+          <div className="mb-3 text-2xl md:mb-4 md:text-3xl">03</div>
 
           <h3 className="mb-2 text-xl font-bold">
             Atención personalizada
@@ -709,11 +707,11 @@ export default function Home() {
 
           <div>
             <p className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-              Servicio
+              Área de servicio
             </p>
 
             <p className="text-xl font-semibold text-slate-950">
-              California, USA
+              Salinas, California
             </p>
           </div>
 
@@ -799,7 +797,7 @@ export default function Home() {
   </div>
 </footer>
 {/* BOTÓN FLOTANTE REDES SOCIALES */}
-<details className="group fixed bottom-20 right-4 z-50 md:bottom-6 md:right-6">
+<details className="group fixed bottom-24 right-3 z-50 md:bottom-6 md:right-6">
   <div className="absolute bottom-full right-0 mb-3 flex flex-col items-end gap-2">
     <a
       href="https://www.instagram.com/islas_party_rentals_831?igsi=MXN5MWg5ZjNmcWo4Yg=="
@@ -822,9 +820,9 @@ export default function Home() {
 
   <summary
     aria-label="Ver redes sociales"
-    className="flex h-14 w-14 cursor-pointer list-none items-center justify-center rounded-full bg-slate-950 text-white shadow-xl transition hover:bg-slate-800 md:h-16 md:w-16"
+    className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full bg-slate-950/90 text-white shadow-lg backdrop-blur-sm transition hover:bg-slate-800 md:h-16 md:w-16 md:bg-slate-950 md:shadow-xl"
   >
-    <Share2 size={28} strokeWidth={2} />
+    <Share2 size={22} strokeWidth={2} />
   </summary>
 </details>
       </section>
