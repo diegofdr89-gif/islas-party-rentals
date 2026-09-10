@@ -8,8 +8,8 @@ import {
   Trees,
 } from "lucide-react";
 
-import QuoteForm from "./components/QuoteForm";
-import LightboxImage from "./components/LightboxImage";
+import QuoteForm from "../components/QuoteForm";
+import LightboxImage from "../components/LightboxImage";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -31,53 +31,53 @@ export default function Home() {
         href="#inicio"
         className="transition hover:text-amber-600"
       >
-        Inicio
+        Home
       </a>
 
       <a
         href="#servicios"
         className="transition hover:text-amber-600"
       >
-        Servicios
+        Services
       </a>
 
       <a
         href="#galeria"
         className="transition hover:text-amber-600"
       >
-        Galería
+        Gallery
       </a>
 
       <a
         href="#nosotros"
         className="transition hover:text-amber-600"
       >
-        Nosotros
+        About Us
       </a>
 
       <a
         href="#contacto"
         className="transition hover:text-amber-600"
       >
-        Contacto
+        Contact
       </a>
     </nav>
 <div className="hidden items-center gap-2 text-sm font-semibold md:flex">
   <a
-    href="/"
-    className="rounded-lg bg-slate-950 px-3 py-2 text-white"
-    aria-label="Ver sitio en español"
-  >
-    ES
-  </a>
+  href="/"
+  className="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
+  aria-label="Ver sitio en español"
+>
+  ES
+</a>
 
-  <a
-    href="/en"
-    className="rounded-lg px-3 py-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
-    aria-label="View site in English"
-  >
-    EN
-  </a>
+<a
+  href="/en"
+  className="rounded-lg bg-slate-950 px-3 py-2 text-white"
+  aria-label="View site in English"
+>
+  EN
+</a>
 </div>
 
     {/* MENÚ PARA CELULAR */}
@@ -127,9 +127,10 @@ export default function Home() {
           Contacto
         </a>
 <div className="flex items-center gap-2 px-4 py-2">
+  <div className="flex items-center gap-2 px-4 py-2">
   <a
     href="/"
-    className="rounded-lg bg-slate-950 px-3 py-2 text-sm font-semibold text-white"
+    className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
     aria-label="Ver sitio en español"
   >
     ES
@@ -137,11 +138,12 @@ export default function Home() {
 
   <a
     href="/en"
-    className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
+    className="rounded-lg bg-slate-950 px-3 py-2 text-sm font-semibold text-white"
     aria-label="View site in English"
   >
     EN
   </a>
+</div>
 </div>
         <div className="my-2 border-t border-slate-200" />
 
@@ -149,7 +151,7 @@ export default function Home() {
           href="tel:+18315400652"
           className="block rounded-xl bg-slate-950 px-4 py-3 text-center font-semibold text-white transition hover:bg-slate-800"
         >
-          Llamar ahora
+          Call now
         </a>
 
       </nav>
@@ -173,15 +175,15 @@ export default function Home() {
   <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full">
     <div className="max-w-3xl">
       <p className="text-amber-400 font-semibold uppercase tracking-[0.2em] text-sm mb-5">
-        Renta de mobiliario para eventos
+        EVENT FURNITURE RENTALS
       </p>
 
       <h1 className="mb-6 max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-        Party Rentals en Salinas, CA para eventos inolvidables
+        Party Rentals in Salinas, CA for Unforgettable Events
       </h1>
 
       <p className="text-lg md:text-xl text-slate-200 leading-relaxed mb-8">
-        Renta de sillas, mesas, sombrillas y toldos para bodas, fiestas, reuniones y todo tipo de eventos.
+        Chair, table, umbrella, and tent rentals for weddings, parties, gatherings, and special events.
       </p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -190,21 +192,21 @@ export default function Home() {
   href="#contacto"
   className="inline-flex w-fit items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:bg-slate-800"
 >
-  Solicitar cotización
+  Request a Quote
 </a>
 
   <a
     href="tel:+18315400652"
     className="inline-flex w-fit items-center justify-center rounded-full border border-white/70 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white hover:text-slate-950"
   >
-    Llamar ahora
+    Call Now
   </a>
 
   <a
     href="#servicios"
     className="inline-flex w-fit items-center justify-center rounded-full border border-white/70 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white hover:text-slate-950"
   >
-    Ver servicios
+    View Services
       </a>
 
     </div>
@@ -216,15 +218,15 @@ export default function Home() {
 
     <div className="mb-14 max-w-2xl">
       <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-        Nuestros servicios
+        Our Services
       </p>
       <h2 className="mb-5 text-4xl font-bold text-slate-950 md:text-5xl">
-        Renta de mobiliario para fiestas y eventos
+        Furniture Rentals for Parties and Events
       </h2>
 
       <p className="text-lg leading-relaxed text-slate-600">
-        Contamos con mobiliario y soluciones para reuniones,
-        celebraciones y eventos especiales.
+        We offer furniture and solutions for gatherings, 
+        celebrations, and special events.
       </p>
     </div>
     <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
@@ -238,14 +240,14 @@ export default function Home() {
     </div>
 
     <h3 className="mb-2 text-xl font-bold text-slate-950">
-      Sillas
+      Chairs
     </h3>
 
     <p className="leading-relaxed text-slate-600">
-  Estilos para todo tipo de eventos.
+  Styles for every type of event.
 </p>
     <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
-      Ver modelos →
+      View Models →
     </span>
   </a>
 
@@ -259,15 +261,15 @@ export default function Home() {
     </div>
 
     <h3 className="mb-2 text-xl font-bold text-slate-950">
-      Mesas
+      Tables
     </h3>
 
     <p className="leading-relaxed text-slate-600">
-  Opciones para cada celebración.
+  Options for every celebration.
 </p>
 
     <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
-      Ver modelos →
+      View Models →
 
     </span>
   </a>
@@ -282,15 +284,15 @@ export default function Home() {
     </div>
 
     <h3 className="mb-2 text-xl font-bold text-slate-950">
-      Sombrillas
+      Umbrellas
     </h3>
 
     <p className="leading-relaxed text-slate-600">
-  Comodidad para eventos al aire libre.
+  Comfort for outdoor events.
 </p>
 
     <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
-      Ver opciones →
+      View Options →
     </span>
   </a>
 
@@ -304,14 +306,14 @@ export default function Home() {
     </div>
 
     <h3 className="mb-2 text-xl font-bold text-slate-950">
-      Toldos
+      Tents
     </h3>
 
     <p className="leading-relaxed text-slate-600">
-  Cobertura para tus celebraciones.
+  Coverage for your celebrations.
 </p>
     <span className="mt-4 inline-block text-sm font-semibold text-amber-600">
-      Ver opciones →
+      View Options →
     </span>
   </a>
 
@@ -322,15 +324,15 @@ export default function Home() {
     </div>
 
     <h3 className="mb-2 text-xl font-bold text-slate-950">
-      Pista de baile
+      Dance Floor
     </h3>
 
     <p className="leading-relaxed text-slate-600">
-  El espacio ideal para bailar.
+  he perfect space for dancing.
 </p>
 
     <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
-      Próximamente
+      Coming Soon
     </span>
   </div>
 
@@ -341,15 +343,15 @@ export default function Home() {
     </div>
 
     <h3 className="mb-2 text-xl font-bold text-slate-950">
-      Césped
+      Grass
     </h3>
 
    <p className="leading-relaxed text-slate-600">
-  Un toque elegante para tu evento.
+  An elegant touch for your event.
 </p>
 
     <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
-      Próximamente
+      Coming Soon
     </span>
   </div>
 </div>
@@ -359,16 +361,16 @@ export default function Home() {
   <div className="mx-auto max-w-7xl px-6">
     <div className="mb-14 max-w-3xl">
       <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-        Nuestro mobiliario
+        Our Furniture
       </p>
 
       <h2 className="mb-5 text-4xl font-bold text-slate-950 md:text-5xl">
-        Opciones para cada tipo de evento
+        Options for Every Type of Event
       </h2>
 
       <p className="text-lg leading-relaxed text-slate-600">
-        Contamos con diferentes estilos de mobiliario y equipo para adaptarnos
-        al ambiente, tamaño y necesidades de tu celebración.
+        We offer a variety of furniture and equipment styles to suit
+        the setting, size, and needs of your event.
       </p>
     </div>
 
@@ -376,16 +378,16 @@ export default function Home() {
       <div className="md:col-span-2">
   <div className="mb-8">
     <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-      Mobiliario
+      Furniture
     </p>
 
     <h3 className="mb-3 text-3xl font-bold text-slate-950">
-      Sillas
+      Chairs
     </h3>
 
     <p className="max-w-2xl leading-relaxed text-slate-600">
-      Diferentes estilos para bodas, reuniones, fiestas, banquetes y
-      celebraciones especiales.
+      A variety of styles for weddings, gatherings, parties, banquets,
+      and special celebrations.
     </p>
   </div>
 
@@ -417,16 +419,16 @@ export default function Home() {
 <div className="md:col-span-2 mt-8">
   <div className="mb-8">
     <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-      Mobiliario
+      Furniture
     </p>
 
     <h3 className="mb-3 text-3xl font-bold text-slate-950">
-      Mesas
+      Tables
     </h3>
 
     <p className="max-w-2xl leading-relaxed text-slate-600">
-      Mesas para banquetes, reuniones, coctelería y eventos con diferentes
-      estilos y configuraciones.
+      Tables for banquets, gatherings, cocktail events, and celebrations
+      in a variety of styles and configurations.
     </p>
   </div>
 
@@ -463,16 +465,16 @@ export default function Home() {
 
         <div className="p-8">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-            Exterior
+            Outdoor
           </p>
 
           <h3 className="mb-3 text-3xl font-bold text-slate-950">
-            Sombrillas
+            Umbrellas
           </h3>
 
           <p className="leading-relaxed text-slate-600">
-            Una solución cómoda y elegante para áreas exteriores,
-            reuniones y celebraciones durante el día.
+            A comfortable and elegant solution for outdoor areas,
+            gatherings, and daytime celebrations.
           </p>
         </div>
       </article>
@@ -488,16 +490,16 @@ export default function Home() {
 
         <div className="p-8">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-            Cobertura
+            Coverage
           </p>
 
           <h3 className="mb-3 text-3xl font-bold text-slate-950">
-            Toldos
+            Tents
           </h3>
 
           <p className="leading-relaxed text-slate-600">
-            Cobertura para mantener a tus invitados cómodos y darle
-            estructura a tu evento al aire libre.
+            Coverage to keep your guests comfortable and provide
+            structure for your outdoor event.
           </p>
         </div>
       </article>
@@ -508,16 +510,16 @@ export default function Home() {
   <div className="mx-auto max-w-7xl px-6">
     <div className="mb-14 max-w-3xl">
       <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-        Galería
+        Gallery
       </p>
 
       <h2 className="mb-5 text-4xl font-bold text-slate-950 md:text-5xl">
-        Eventos que hablan por sí solos
+        Events That Speak for Themselves
       </h2>
 
       <p className="text-lg leading-relaxed text-slate-600">
-        Algunos de nuestros montajes y trabajos realizados para crear
-        espacios especiales, cómodos y memorables.
+        A look at some of our setups and event work designed to create
+        special, comfortable, and memorable spaces.
       </p>
     </div>
 
@@ -609,20 +611,21 @@ export default function Home() {
       {/* TEXTO */}
       <div>
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">
-          Sobre nosotros
+          About Us
         </p>
 
         <h2 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
-          Más que mobiliario,
-          <span className="text-amber-400"> creamos espacios para celebrar</span>
+          More Than Furniture,
+          <span className="text-amber-400"> We Create Spaces to Celebrate</span>
         </h2>
 
         <p className="mb-4 text-base leading-relaxed text-slate-300 md:mb-5 md:text-lg">
-  En Islas Party Rentals ofrecemos renta de mobiliario y equipo para eventos en Salinas, California. Contamos con sillas, mesas, sombrillas, toldos, pista de baile y césped para crear el espacio ideal para cada celebración.
+  At Islas Party Rentals, we provide furniture and equipment rentals for events in Salinas, California.
+
 </p>
 
         <p className="text-base leading-relaxed text-slate-300 md:text-lg">
-  Desde reuniones familiares hasta eventos especiales, te ayudamos a encontrar las opciones adecuadas para cada ocasión.
+  From family gatherings to special events, we help you find the right options for every celebration.
 </p>
       </div>
 
@@ -633,12 +636,12 @@ export default function Home() {
           <div className="mb-3 text-2xl md:mb-4 md:text-3xl">01</div>
 
           <h3 className="mb-2 text-xl font-bold">
-            Variedad de mobiliario
+            Furniture Variety
           </h3>
 
           <p className="leading-relaxed text-slate-400">
-            Diferentes opciones de mesas y sillas para adaptarse al estilo
-            y necesidades de cada evento.
+            A variety of tables and chairs to suit the style
+            and needs of every event.
           </p>
         </div>
 
@@ -646,12 +649,12 @@ export default function Home() {
           <div className="mb-3 text-2xl md:mb-4 md:text-3xl">02</div>
 
           <h3 className="mb-2 text-xl font-bold">
-            Soluciones para exterior
+            Outdoor Solutions
           </h3>
 
           <p className="leading-relaxed text-slate-400">
-            Toldos y sombrillas para crear espacios cómodos y funcionales
-            en celebraciones al aire libre.
+            Tents and umbrellas to create comfortable and functional spaces
+            for outdoor celebrations.
           </p>
         </div>
 
@@ -659,12 +662,12 @@ export default function Home() {
           <div className="mb-3 text-2xl md:mb-4 md:text-3xl">03</div>
 
           <h3 className="mb-2 text-xl font-bold">
-            Atención personalizada
+            Personalized Service
           </h3>
 
           <p className="leading-relaxed text-slate-400">
-            Te ayudamos a encontrar las opciones que mejor se adapten
-            al tipo de celebración que estás organizando.
+            We help you find the options that best suit
+            the type of celebration you're planning.
           </p>
         </div>
 
@@ -679,16 +682,16 @@ export default function Home() {
 
       <div className="max-w-3xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-950/70">
-          Planea tu evento
+          Plan Your Event
         </p>
 
         <h2 className="mb-4 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
-          ¿Planeando tu próximo evento?
+          Planning Your Next Event?
         </h2>
 
         <p className="text-lg leading-relaxed text-slate-900/80">
-          Cuéntanos qué necesitas y te ayudamos a encontrar el mobiliario,
-          toldos y opciones adecuadas para tu celebración.
+          Tell us what you need and we'll help you find the right furniture,
+          tents, and options for your celebration.
         </p>
       </div>
 
@@ -696,7 +699,7 @@ export default function Home() {
   href="#contacto"
   className="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-950 px-8 py-4 font-semibold text-white transition hover:bg-slate-800"
 >
-  Solicitar cotización
+  Request a Quote
 </a>
     </div>
   </div>
@@ -710,24 +713,24 @@ export default function Home() {
       {/* INFORMACIÓN */}
       <div>
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-          Contacto
+          Contact
         </p>
 
         <h2 className="mb-6 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
-          Hagamos realidad tu próximo evento
+          Let’s Bring Your Next Event to Life
         </h2>
 
         <p className="mb-8 max-w-xl text-lg leading-relaxed text-slate-600">
-          Cuéntanos qué estás planeando y qué mobiliario necesitas.
-          Estamos listos para ayudarte a encontrar las mejores opciones
-          para tu celebración.
+          Tell us what you're planning and what furniture you need.
+          We're ready to help you find the best options
+          for your celebration.
         </p>
 
         <div className="space-y-6">
 
           <div>
             <p className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-              Telefono
+              Phone
             </p>
 
             <a
@@ -740,7 +743,7 @@ export default function Home() {
 
           <div>
             <p className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-              Área de servicio
+              Service Area
             </p>
 
             <p className="text-xl font-semibold text-slate-950">
@@ -754,17 +757,17 @@ export default function Home() {
       {/* FORMULARIO DE COTIZACIÓN */}
 <div className="rounded-3xl bg-slate-50 p-8 md:p-10">
   <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-500">
-    Cotización
+    Quote
   </p>
 
   <h3 className="mb-3 text-3xl font-bold text-slate-950">
-    Solicita una cotización
+    Request a Quote
   </h3>
 
   <p className="mb-8 leading-relaxed text-slate-600">
-    Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo.
+    Tell us a little about your event and we'll get in touch with you.
   </p>
-<QuoteForm />
+<QuoteForm language="en" />
 </div>
     </div>
   </div>
