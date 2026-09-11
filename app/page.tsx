@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Armchair,
   Table2,
@@ -10,6 +11,56 @@ import {
 
 import QuoteForm from "./components/QuoteForm";
 import LightboxImage from "./components/LightboxImage";
+export const metadata: Metadata = {
+  title: "Islas Party Rentals | Renta para Eventos en Salinas, CA",
+  description:
+    "Renta de sillas, mesas, sombrillas, toldos, pista de baile y mobiliario para eventos en Salinas, California. Solicita una cotización con Islas Party Rentals.",
+
+  keywords: [
+    "renta de sillas Salinas CA",
+    "renta de mesas Salinas CA",
+    "renta de toldos Salinas CA",
+    "renta para eventos Salinas CA",
+    "party rentals Salinas CA",
+    "event rentals Salinas CA",
+    "Islas Party Rentals",
+  ],
+
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en",
+      "es-US": "/",
+      "x-default": "/en",
+    },
+  },
+
+  openGraph: {
+    url: "/",
+    title: "Islas Party Rentals | Renta para Eventos en Salinas, CA",
+    description:
+      "Renta de sillas, mesas, sombrillas y toldos para fiestas, bodas y eventos especiales en Salinas, California.",
+    type: "website",
+    locale: "es_US",
+    siteName: "Islas Party Rentals",
+    images: [
+      {
+        url: "/images/social-share.png",
+        width: 1200,
+        height: 630,
+        alt: "Islas Party Rentals - Salinas, California",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Islas Party Rentals | Renta para Eventos en Salinas, CA",
+    description:
+      "Renta de sillas, mesas, sombrillas y toldos para fiestas, bodas y eventos especiales en Salinas, California.",
+    images: ["/images/social-share.png"],
+  },
+};
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -764,7 +815,7 @@ export default function Home() {
   <p className="mb-8 leading-relaxed text-slate-600">
     Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo.
   </p>
-<QuoteForm />
+<QuoteForm language="es" />
 </div>
     </div>
   </div>

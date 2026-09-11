@@ -136,7 +136,9 @@ export default function QuoteForm({ language = "es" }: QuoteFormProps) {
           required
           className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-amber-500"
         >
-          <option value="">Selecciona una opción</option>
+          <option value="">
+  {language === "en" ? "Select an option" : "Selecciona una opción"}
+</option>
 <option value="">
   {language === "en" ? "Select an option" : "Selecciona una opción"}
 </option>
@@ -191,6 +193,7 @@ export default function QuoteForm({ language = "es" }: QuoteFormProps) {
     ? "E.g. I need tables, chairs, and a tent for a party of approximately 100 people..."
     : "Ej. Necesito mesas, sillas y un toldo para una fiesta de aproximadamente 100 personas..."
 }
+className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 outline-none transition focus:border-slate-400"
         />
       </div>
 

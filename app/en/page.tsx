@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Armchair,
   Table2,
@@ -10,6 +11,56 @@ import {
 
 import QuoteForm from "../components/QuoteForm";
 import LightboxImage from "../components/LightboxImage";
+export const metadata: Metadata = {
+  title: "Islas Party Rentals | Party Rentals in Salinas, CA",
+  description:
+    "Chair, table, umbrella, tent, dance floor and event rentals in Salinas, California. Request a quote from Islas Party Rentals.",
+
+  keywords: [
+    "party rentals Salinas CA",
+    "event rentals Salinas CA",
+    "chair rentals Salinas CA",
+    "table rentals Salinas CA",
+    "tent rentals Salinas CA",
+    "dance floor rentals Salinas CA",
+    "Islas Party Rentals",
+  ],
+
+  alternates: {
+    canonical: "/en",
+    languages: {
+      "en-US": "/en",
+      "es-US": "/",
+      "x-default": "/en",
+    },
+  },
+
+  openGraph: {
+    url: "/en",
+    title: "Islas Party Rentals | Party Rentals in Salinas, CA",
+    description:
+      "Chair, table, umbrella and tent rentals for parties, weddings and special events in Salinas, California.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Islas Party Rentals",
+    images: [
+      {
+        url: "/images/social-share.png",
+        width: 1200,
+        height: 630,
+        alt: "Islas Party Rentals - Salinas, California",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Islas Party Rentals | Party Rentals in Salinas, CA",
+    description:
+      "Chair, table, umbrella and tent rentals for parties, weddings and special events in Salinas, California.",
+    images: ["/images/social-share.png"],
+  },
+};
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -782,29 +833,29 @@ export default function Home() {
       </h3>
 
       <p className="mt-2 text-sm text-slate-400">
-        Mobiliario y soluciones para eventos.
+        Furniture and solutions for events.
       </p>
     </div>
 
     <div className="flex flex-wrap gap-6 text-sm text-slate-300">
       <a href="#" className="transition hover:text-amber-400">
-        Inicio
+        Home
       </a>
 
       <a href="#servicios" className="transition hover:text-amber-400">
-        Servicios
+        Services
       </a>
 
       <a href="#galeria" className="transition hover:text-amber-400">
-        Galería
+        Gallery
       </a>
 
       <a href="#nosotros" className="transition hover:text-amber-400">
-        Nosotros
+        About
       </a>
 
       <a href="#contacto" className="transition hover:text-amber-400">
-        Contacto
+        Contact
       </a>
     </div>
 
@@ -875,7 +926,7 @@ export default function Home() {
   </div>
 
   <summary
-    aria-label="Ver redes sociales"
+    aria-label="View social media"
     className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full bg-slate-950/90 text-white shadow-lg backdrop-blur-sm transition hover:bg-slate-800 md:h-16 md:w-16 md:bg-slate-950 md:shadow-xl"
   >
     <Share2 size={22} strokeWidth={2} />
