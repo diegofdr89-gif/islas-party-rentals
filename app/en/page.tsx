@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   Armchair,
   Table2,
@@ -215,9 +216,14 @@ export default function Home() {
   id="inicio"
   className="relative flex min-h-[650px] items-center overflow-hidden text-white md:min-h-[720px]"
 >
-  <div
-  className="absolute inset-0 bg-cover bg-[center_45%] md:bg-center"
-  style={{ backgroundImage: "url('/images/hero-evento.jpeg')" }}
+  <Image
+  src="/images/hero-evento.jpeg"
+  alt="Event setup by Islas Party Rentals"
+  fill
+  priority
+  fetchPriority="high"
+  sizes="100vw"
+  className="object-cover object-[center_45%] md:object-center"
 />
 
   <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20" />
@@ -455,13 +461,15 @@ export default function Home() {
         key={src}
         className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
       >
-        <div className="aspect-[4/5] overflow-hidden bg-white">
-          <img
-            src={src}
-            alt="Silla disponible en renta"
-            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
-          />
-        </div>
+        <div className="relative aspect-[4/5] overflow-hidden bg-white">
+  <Image
+    src={src}
+    alt="Chair available for rent"
+    fill
+    sizes="(max-width: 768px) 50vw, 33vw"
+    className="object-contain transition duration-500 group-hover:scale-105"
+  />
+</div>
       </div>
     ))}
   </div>
@@ -494,12 +502,14 @@ export default function Home() {
         key={src}
         className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
       >
-        <div className="aspect-[4/3] overflow-hidden bg-white">
-          <img
-            src={src}
-            alt="Mesa disponible en renta"
-            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
-          />
+        <div className="relative aspect-[4/3] overflow-hidden bg-white">
+          <Image
+  src={src}
+  alt="Table available for rent"
+  fill
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-contain transition duration-500 group-hover:scale-105"
+/>
         </div>
       </div>
     ))}
