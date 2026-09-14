@@ -490,30 +490,58 @@ export default function Home() {
   </div>
 
   <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-    {[
-      "/images/large-round-banquet-table.png",
-      "/images/modern-cocktail-table.png",
-      "/images/rectangular-event-table.png",
-      "/images/rustic-farmhouse-table.png",
-    ].map((src) => (
-      <div
-        key={src}
-        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
-      >
-        <div className="aspect-[4/3] overflow-hidden bg-white">
-          <div className="relative aspect-[4/3] overflow-hidden bg-white">
-  <Image
-    src={src}
-    alt="Mesa disponible en renta"
-    fill
-    sizes="(max-width: 768px) 100vw, 50vw"
-    className="object-contain transition duration-500 group-hover:scale-105"
-  />
-</div>
-        </div>
+  {[
+    {
+      src: "/images/large-round-banquet-table.jpeg",
+      name: "Mesa redonda para banquetes",
+      description:
+        "Mesa redonda ideal para banquetes, fiestas y eventos especiales.",
+    },
+    {
+      src: "/images/modern-cocktail-table.jpeg",
+      name: "Mesa cocktail moderna",
+      description:
+        "Mesa alta ideal para recepciones, convivios y reuniones sociales.",
+    },
+    {
+      src: "/images/rectangular-event-table.jpeg",
+      name: "Mesa rectangular para eventos",
+      description:
+        "Mesa rectangular versátil para fiestas y eventos especiales.",
+    },
+    {
+      src: "/images/rustic-farmhouse-table.jpeg",
+      name: "Mesa rústica tipo farmhouse",
+      description:
+        "Mesa de madera con estilo cálido y rústico para eventos especiales.",
+    },
+  ].map((table) => (
+    <div
+      key={table.src}
+      className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <div className="relative aspect-[4/3] overflow-hidden bg-white">
+        <Image
+          src={table.src}
+          alt={table.name}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain transition duration-500 group-hover:scale-105"
+        />
       </div>
-    ))}
-  </div>
+
+      <div className="p-5">
+        <h4 className="text-lg font-semibold text-slate-900">
+          {table.name}
+        </h4>
+
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          {table.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
 </div>
       <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
         <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">

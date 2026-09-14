@@ -493,24 +493,50 @@ export default function Home() {
 
   <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
     {[
-      "/images/large-round-banquet-table.png",
-      "/images/modern-cocktail-table.png",
-      "/images/rectangular-event-table.png",
-      "/images/rustic-farmhouse-table.png",
-    ].map((src) => (
+  {
+  src: "/images/large-round-banquet-table.jpeg",
+  name: "Large Round Banquet Table",
+  description: "Round table ideal for banquets, parties, and special events.",
+},
+{
+  src: "/images/modern-cocktail-table.jpeg",
+  name: "Modern Cocktail Table",
+  description: "Cocktail table ideal for receptions and social gatherings.",
+},
+{
+  src: "/images/rectangular-event-table.jpeg",
+  name: "Rectangular Event Table",
+  description: "Versatile rectangular table for parties and special events.",
+},
+{
+  src: "/images/rustic-farmhouse-table.jpeg",
+  name: "Rustic Farmhouse Table",
+  description: "Wooden farmhouse table with a warm, rustic look for special events.",
+},
+].map((table) => (
       <div
-        key={src}
+        key={table.src}
         className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
       >
         <div className="relative aspect-[4/3] overflow-hidden bg-white">
-          <Image
-  src={src}
-  alt="Table available for rent"
-  fill
-  sizes="(max-width: 768px) 100vw, 50vw"
-  className="object-contain transition duration-500 group-hover:scale-105"
-/>
-        </div>
+  <Image
+    src={table.src}
+    alt="Table available for rent"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+    className="object-contain transition duration-500 group-hover:scale-105"
+  />
+</div>
+
+<div className="p-5">
+  <h4 className="text-lg font-semibold text-slate-900">
+    {table.name}
+  </h4>
+
+  <p className="mt-2 text-sm leading-relaxed text-slate-600">
+    {table.description}
+  </p>
+</div>
       </div>
     ))}
   </div>
