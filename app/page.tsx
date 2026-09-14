@@ -516,13 +516,15 @@ export default function Home() {
   </div>
 </div>
       <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-          <img
-            src="/images/sombrilla.jpeg"
-            alt="Sombrillas para eventos al aire libre"
-            className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
-          />
-        </div>
+        <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+  <Image
+    src="/images/sombrilla.jpeg"
+    alt="Sombrillas para eventos al aire libre"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+    className="object-contain transition duration-500 group-hover:scale-105"
+  />
+</div>
 
         <div className="p-8">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">

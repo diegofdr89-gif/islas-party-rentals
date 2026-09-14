@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { X } from "lucide-react";
 
 type LightboxImageProps = {
@@ -42,7 +43,16 @@ export default function LightboxImage({
         className="block h-full w-full cursor-zoom-in"
         aria-label={`Ampliar imagen: ${alt}`}
       >
-        <img src={src} alt={alt} className={className} />
+        <div className="relative h-full w-full">
+  <Image
+  src={src}
+  alt={alt}
+  width={1200}
+  height={900}
+  sizes="(max-width: 768px) 50vw, 33vw"
+  className={className}
+/>
+</div>
       </button>
 
       {open && (
@@ -59,12 +69,19 @@ export default function LightboxImage({
             <X size={28} />
           </button>
 
-          <img
-            src={src}
-            alt={alt}
-            className="max-h-[90vh] max-w-[94vw] rounded-2xl object-contain shadow-2xl"
-            onClick={(event) => event.stopPropagation()}
-          />
+          <div
+  className="relative max-h-[90vh] max-w-[94vw]"
+  onClick={(event) => event.stopPropagation()}
+>
+  <Image
+    src={src}
+    alt={alt}
+    width={1600}
+    height={1200}
+    sizes="94vw"
+    className="max-h-[90vh] max-w-[94vw] rounded-2xl object-contain shadow-2xl"
+  />
+</div>
         </div>
       )}
     </>
