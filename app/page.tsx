@@ -543,13 +543,15 @@ export default function Home() {
       </article>
 
       <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-          <img
-            src="/images/toldo-blanco.jpeg"
-            alt="Toldos para eventos"
-            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-          />
-        </div>
+        <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+  <Image
+    src="/images/toldo-blanco.jpeg"
+    alt="Toldos para eventos"
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+    className="object-cover transition duration-500 group-hover:scale-105"
+  />
+</div>
 
         <div className="p-8">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
