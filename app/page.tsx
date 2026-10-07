@@ -386,9 +386,12 @@ export default function Home() {
   El espacio ideal para bailar.
 </p>
 
-    <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
-      Próximamente
-    </span>
+    <a
+  href="#pista-de-baile"
+  className="mt-4 inline-block text-sm font-semibold text-amber-600 transition hover:text-amber-700"
+>
+  Ver opciones →
+</a>
   </div>
 
   {/* CÉSPED */}
@@ -405,9 +408,12 @@ export default function Home() {
   Un toque elegante para tu evento.
 </p>
 
-    <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
-      Próximamente
-    </span>
+    <a
+  href="#cesped"
+  className="mt-4 inline-block text-sm font-semibold text-amber-600 transition hover:text-amber-700"
+>
+  Ver opciones →
+</a>
   </div>
 </div>
   </div>
@@ -447,30 +453,64 @@ export default function Home() {
   </div>
 
   <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
-    {[
-      "/images/white-resin.png",
-      "/images/fruitwood.png",
-      "/images/black-resin.png",
-      "/images/crossback.png",
-      "/images/gold-chiavari.png",
-      "/images/clear-chiavari-black-cushion.png",
-    ].map((src) => (
-      <div
-        key={src}
-        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
-      >
-        <div className="relative aspect-[4/5] overflow-hidden bg-white">
-  <Image
-    src={src}
-    alt="Silla disponible en renta"
-    fill
-    sizes="(max-width: 768px) 50vw, 33vw"
-    className="object-contain transition duration-500 group-hover:scale-105"
-  />
-</div>
+  {[
+    {
+      src: "/images/white-resin-clean.jpeg",
+      name: "Silla White Resin",
+      description: "Silla blanca versátil para fiestas, ceremonias y eventos especiales.",
+    },
+    {
+      src: "/images/fruitwood-clean.png",
+      name: "Silla Fruitwood",
+      description: "Silla con acabado en madera, ideal para celebraciones elegantes y rústicas.",
+    },
+    {
+      src: "/images/black-resin-clean.png",
+      name: "Silla Black Resin",
+      description: "Silla negra clásica para fiestas, reuniones y eventos especiales.",
+    },
+    {
+      src: "/images/crossback-clean.jpeg",
+      name: "Silla Crossback",
+      description: "Silla de madera con diseño clásico, ideal para eventos elegantes.",
+    },
+    {
+      src: "/images/gold-chiavari-clean.jpeg",
+      name: "Silla Chiavari Dorada",
+      description: "Silla dorada elegante, ideal para bodas y celebraciones especiales.",
+    },
+    {
+      src: "/images/clear-chiavari-black-cushion-clean.jpeg",
+      name: "Silla Chiavari Transparente con Cojín Negro",
+      description: "Silla transparente con cojín negro para eventos modernos y elegantes.",
+    },
+  ].map((chair) => (
+    <div
+      key={chair.src}
+      className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <div className="relative aspect-[4/5] overflow-hidden bg-white">
+        <Image
+          src={chair.src}
+          alt={chair.name}
+          fill
+          sizes="(max-width: 768px) 50vw, 33vw"
+          className="object-contain transition duration-500 group-hover:scale-105"
+        />
       </div>
-    ))}
-  </div>
+
+      <div className="p-5">
+        <h4 className="text-lg font-semibold text-slate-900">
+          {chair.name}
+        </h4>
+
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          {chair.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
 </div>
 
 <div className="md:col-span-2 mt-8">
@@ -570,32 +610,140 @@ export default function Home() {
         </div>
       </article>
 
-      <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-  <Image
-    src="/images/toldo-blanco.jpeg"
-    alt="Toldos para eventos"
-    fill
-    sizes="(max-width: 768px) 100vw, 50vw"
-    className="object-cover transition duration-500 group-hover:scale-105"
-  />
-</div>
+      <div className="md:col-span-2 mt-8">
+  <div className="mb-8">
+    <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
+      Cobertura
+    </p>
 
-        <div className="p-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-            Cobertura
-          </p>
+    <h3 className="mb-3 text-3xl font-bold text-slate-950">
+      Toldos
+    </h3>
 
-          <h3 className="mb-3 text-3xl font-bold text-slate-950">
-            Toldos
-          </h3>
+    <p className="max-w-2xl leading-relaxed text-slate-600">
+      Opciones de cobertura para crear espacios cómodos y especiales en tus eventos al aire libre.
+    </p>
+  </div>
 
-          <p className="leading-relaxed text-slate-600">
-            Cobertura para mantener a tus invitados cómodos y darle
-            estructura a tu evento al aire libre.
+  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
+    {[
+      {
+        src: "/images/toldo-blanco.jpeg",
+        name: "Toldo Blanco",
+        description:
+          "Una opción práctica y elegante para brindar cobertura en celebraciones y eventos al aire libre.",
+      },
+      {
+        src: "/images/toldo-transparente-luces.png",
+        name: "Toldo Transparente con Luces",
+        description:
+          "Toldo transparente con iluminación decorativa, ideal para crear un ambiente elegante y especial.",
+      },
+    ].map((tent) => (
+      <div
+        key={tent.src}
+        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div className="relative aspect-[4/3] overflow-hidden bg-white">
+          <Image
+            src={tent.src}
+            alt={tent.name}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-contain transition duration-500 group-hover:scale-105"
+          />
+        </div>
+
+        <div className="p-5">
+          <h4 className="text-lg font-semibold text-slate-900">
+            {tent.name}
+          </h4>
+
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
+            {tent.description}
           </p>
         </div>
-      </article>
+      </div>
+    ))}
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section className="bg-slate-50 py-16 md:py-24">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mb-14 max-w-3xl">
+      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
+        Complementos para tu evento
+      </p>
+
+      <h2 className="mb-5 text-4xl font-bold text-slate-950 md:text-5xl">
+        Más opciones para crear el ambiente perfecto
+      </h2>
+
+      <p className="text-lg leading-relaxed text-slate-600">
+        Complementa tu celebración con opciones diseñadas para crear espacios
+        cómodos, elegantes y especiales.
+      </p>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {[
+        {
+          src: "/images/cesped-artificial.jpeg",
+          name: "Césped Artificial",
+          description:
+            "Una opción ideal para crear áreas verdes y elegantes en todo tipo de eventos.",
+        },
+        {
+          src: "/images/pista-baile.png",
+          name: "Pista de Baile",
+          description:
+            "Un espacio especial para disfrutar, bailar y darle un toque único a tu celebración.",
+        },
+        {
+          src: "/images/calentador-patio.jpeg",
+          name: "Calentador de Patio",
+          description:
+            "Ideal para brindar mayor comodidad a tus invitados durante eventos al aire libre.",
+        },
+      ].map((item) => (
+        <article
+  key={item.src}
+  id={
+    item.name === "Pista de Baile"
+      ? "pista-de-baile"
+      : item.name === "Césped Artificial"
+      ? "cesped"
+      : undefined
+  }
+  className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 ..."
+>
+          <div className="relative aspect-[4/3] overflow-hidden bg-white">
+            <Image
+              src={item.src}
+              alt={item.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className={`object-contain transition duration-500 ${
+  item.src.includes("calentador-patio")
+    ? "scale-[1.25] group-hover:scale-[1.30]"
+    : "group-hover:scale-105"
+}`}
+            />
+          </div>
+
+          <div className="p-5">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {item.name}
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              {item.description}
+            </p>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </section>

@@ -388,9 +388,12 @@ export default function Home() {
   he perfect space for dancing.
 </p>
 
-    <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
-      Coming Soon
-    </span>
+    <a
+  href="#dance-floor"
+  className="mt-4 inline-block text-sm font-semibold text-amber-600 transition hover:text-amber-700"
+>
+  View options →
+</a>
   </div>
 
   {/* CÉSPED */}
@@ -407,9 +410,12 @@ export default function Home() {
   An elegant touch for your event.
 </p>
 
-    <span className="mt-4 inline-block text-sm font-semibold text-slate-400">
-      Coming Soon
-    </span>
+    <a
+  href="#artificial-grass"
+  className="mt-4 inline-block text-sm font-semibold text-amber-600 transition hover:text-amber-700"
+>
+  View options →
+</a>
   </div>
 </div>
   </div>
@@ -449,32 +455,65 @@ export default function Home() {
   </div>
 
   <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
-    {[
-      "/images/white-resin.png",
-      "/images/fruitwood.png",
-      "/images/black-resin.png",
-      "/images/crossback.png",
-      "/images/gold-chiavari.png",
-      "/images/clear-chiavari-black-cushion.png",
-    ].map((src) => (
-      <div
-        key={src}
-        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
-      >
-        <div className="relative aspect-[4/5] overflow-hidden bg-white">
-  <Image
-    src={src}
-    alt="Chair available for rent"
-    fill
-    sizes="(max-width: 768px) 50vw, 33vw"
-    className="object-contain transition duration-500 group-hover:scale-105"
-  />
-</div>
+  {[
+    {
+      src: "/images/white-resin-clean.jpeg",
+      name: "White Resin Chair",
+      description: "A versatile white chair for parties, ceremonies, and special events.",
+    },
+    {
+      src: "/images/fruitwood-clean.png",
+      name: "Fruitwood Chair",
+      description: "A warm wood-finish chair ideal for elegant and rustic celebrations.",
+    },
+    {
+      src: "/images/black-resin-clean.png",
+      name: "Black Resin Chair",
+      description: "A classic black chair for parties, gatherings, and special events.",
+    },
+    {
+      src: "/images/crossback-clean.jpeg",
+      name: "Crossback Chair",
+      description: "A stylish wooden chair with a timeless look for elegant events.",
+    },
+    {
+      src: "/images/gold-chiavari-clean.jpeg",
+      name: "Gold Chiavari Chair",
+      description: "An elegant gold chair ideal for weddings and special celebrations.",
+    },
+    {
+      src: "/images/clear-chiavari-black-cushion-clean.jpeg",
+      name: "Clear Chiavari Chair with Black Cushion",
+      description: "A modern clear chair with a black cushion for elegant events.",
+    },
+  ].map((chair) => (
+    <div
+      key={chair.src}
+      className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <div className="relative aspect-[4/5] overflow-hidden bg-white">
+        <Image
+          src={chair.src}
+          alt={chair.name}
+          fill
+          sizes="(max-width: 768px) 50vw, 33vw"
+          className="object-contain transition duration-500 group-hover:scale-105"
+        />
       </div>
-    ))}
-  </div>
-</div>
 
+      <div className="p-5">
+        <h4 className="text-lg font-semibold text-slate-900">
+          {chair.name}
+        </h4>
+
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          {chair.description}
+        </p>
+      </div>
+    </div>
+  ))}
+  </div>
+  </div>
 <div className="md:col-span-2 mt-8">
   <div className="mb-8">
     <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
@@ -568,32 +607,140 @@ export default function Home() {
         </div>
       </article>
 
-      <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+      <div className="md:col-span-2">
+  <div className="mb-6">
+    <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
+      Coverage
+    </p>
+
+    <h3 className="mb-2 text-3xl font-bold text-slate-950">
+      Tents
+    </h3>
+
+    <p className="leading-relaxed text-slate-600">
+      Coverage options to create comfortable and special spaces for your outdoor events.
+    </p>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-2">
+    {[
+      {
+        src: "/images/toldo-blanco.jpeg",
+        name: "White Tent",
+        description:
+          "A practical and elegant option to provide coverage for celebrations and outdoor events.",
+      },
+      {
+        src: "/images/toldo-transparente-luces.png",
+        name: "Clear Tent with Lights",
+        description:
+          "A clear tent with decorative lighting, ideal for creating an elegant and special atmosphere.",
+      },
+    ].map((tent) => (
+      <article
+        key={tent.src}
+        className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+      >
+        <div className="relative aspect-[4/3] overflow-hidden bg-white">
           <Image
-  src="/images/toldo-blanco.jpeg"
-  alt="Tents for events"
-  fill
-  sizes="(max-width: 768px) 100vw, 50vw"
-  className="object-cover transition duration-500 group-hover:scale-105"
-/>
+            src={tent.src}
+            alt={tent.name}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-contain transition duration-500 group-hover:scale-105"
+          />
         </div>
 
-        <div className="p-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-            Coverage
-          </p>
+        <div className="p-5">
+          <h4 className="text-lg font-semibold text-slate-900">
+            {tent.name}
+          </h4>
 
-          <h3 className="mb-3 text-3xl font-bold text-slate-950">
-            Tents
-          </h3>
-
-          <p className="leading-relaxed text-slate-600">
-            Coverage to keep your guests comfortable and provide
-            structure for your outdoor event.
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
+            {tent.description}
           </p>
         </div>
       </article>
+    ))}
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section className="bg-slate-50 py-16 md:py-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mb-10 max-w-2xl">
+      <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
+        More Options
+      </p>
+
+      <h2 className="mb-3 text-4xl font-bold text-slate-950">
+        More options to create the perfect atmosphere
+      </h2>
+
+      <p className="leading-relaxed text-slate-600">
+        Complete your celebration with options designed to create comfortable,
+        elegant, and special spaces.
+      </p>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {[
+        {
+          src: "/images/cesped-artificial.jpeg",
+          name: "Artificial Grass",
+          description:
+            "An ideal option to create green and elegant areas for all types of events.",
+        },
+        {
+          src: "/images/pista-baile.png",
+          name: "Dance Floor",
+          description:
+            "A special space to enjoy, dance, and add a unique touch to your celebration.",
+        },
+        {
+          src: "/images/calentador-patio.jpeg",
+          name: "Patio Heater",
+          description:
+            "Ideal for providing greater comfort to your guests during outdoor events.",
+        },
+      ].map((item) => (
+        <article
+        id={
+  item.name === "Dance Floor"
+    ? "dance-floor"
+    : item.name === "Artificial Grass"
+      ? "artificial-grass"
+      : undefined
+}
+          key={item.src}
+          className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+          <div className="relative aspect-[4/3] overflow-hidden bg-white">
+            <Image
+              src={item.src}
+              alt={item.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className={`object-contain transition duration-500 ${
+                item.src.includes("calentador-patio")
+                  ? "scale-[1.25] group-hover:scale-[1.30]"
+                  : "group-hover:scale-105"
+              }`}
+            />
+          </div>
+
+          <div className="p-5">
+            <h3 className="text-lg font-semibold text-slate-900">
+              {item.name}
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              {item.description}
+            </p>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </section>
