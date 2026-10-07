@@ -584,7 +584,7 @@ export default function Home() {
 </div>
 </div>
       <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+        <div className="relative aspect-[4/3] overflow-hidden bg-white">
   <Image
     src="/images/sombrilla.jpeg"
     alt="Sombrillas para eventos al aire libre"
@@ -650,7 +650,9 @@ export default function Home() {
             alt={tent.name}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-contain transition duration-500 group-hover:scale-105"
+            className={`transition duration-500 group-hover:scale-105 ${
+  tent.name === "Toldo Blanco" ? "object-cover" : "object-contain"
+}`}
           />
         </div>
 
@@ -702,7 +704,7 @@ export default function Home() {
             "Un espacio especial para disfrutar, bailar y darle un toque único a tu celebración.",
         },
         {
-          src: "/images/calentador-patio.jpeg",
+          src: "/images/calentador-patio.png",
           name: "Calentador de Patio",
           description:
             "Ideal para brindar mayor comodidad a tus invitados durante eventos al aire libre.",
@@ -725,11 +727,7 @@ export default function Home() {
               alt={item.name}
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
-              className={`object-contain transition duration-500 ${
-  item.src.includes("calentador-patio")
-    ? "scale-[1.25] group-hover:scale-[1.30]"
-    : "group-hover:scale-105"
-}`}
+              className="object-contain transition duration-500 group-hover:scale-105"
             />
           </div>
 

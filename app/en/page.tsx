@@ -578,10 +578,10 @@ export default function Home() {
 </div>
       </div>
     ))}
-  </div>
+  </div>src="/images/toldo-blanco.jpeg"
 </div>
       <article className="group overflow-hidden rounded-3xl bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+        <div className="relative aspect-[4/3] overflow-hidden bg-white">
   <Image
     src="/images/sombrilla.jpeg"
     alt="Umbrellas for outdoor events"
@@ -647,7 +647,11 @@ export default function Home() {
             alt={tent.name}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-contain transition duration-500 group-hover:scale-105"
+            className={`transition duration-500 ${
+  tent.src.includes("toldo-blanco")
+    ? "object-cover group-hover:scale-105"
+    : "object-contain group-hover:scale-105"
+}`}
           />
         </div>
 
@@ -699,7 +703,7 @@ export default function Home() {
             "A special space to enjoy, dance, and add a unique touch to your celebration.",
         },
         {
-          src: "/images/calentador-patio.jpeg",
+          src: "/images/calentador-patio.png",
           name: "Patio Heater",
           description:
             "Ideal for providing greater comfort to your guests during outdoor events.",
@@ -724,7 +728,7 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 33vw"
               className={`object-contain transition duration-500 ${
                 item.src.includes("calentador-patio")
-                  ? "scale-[1.25] group-hover:scale-[1.30]"
+                  ? "scale-100 group-hover:scale-105"
                   : "group-hover:scale-105"
               }`}
             />
